@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 body{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
-h5{
+/* h5{
     white-space: nowrap;
-}
+} */
 
 .header1{
     display: flex;
@@ -409,7 +409,7 @@ h4{
     } 
 .oublie{
     display: flex;
-    background-color: rgb(57, 42, 72);
+    background-color: rgb(33, 10, 48);
     justify-content: center;
     gap: 250px;
     color: white;
@@ -453,7 +453,7 @@ h4{
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
     header{
         display: flex;
         gap: 130px;
@@ -461,8 +461,8 @@ h4{
     }
     .container{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+    flex-direction: column;
+    justify-content: start;
         padding: 60px;
         gap: 10px;
         width: 50%;        
@@ -470,6 +470,11 @@ h4{
     .row{
         font-size: 1.2em;
     }
+
+    .lien a{
+        background-color: orange;
+        position: absolute;
+        right: 25%;}
     .heade{
         height: 178px;       
     }
@@ -507,62 +512,7 @@ h4{
         margin-top: 0PX;
         font-size: 0.6em;
     }
-    .d-grid{
-            display: grid;
-         
-           
-           
-    }
-    .d-grid .item1 img{
-        max-width: 100%;
-     height: 100%;
-    }
-    .item1{
-        grid-column: 1 / 7;
-        
-    }
-    .item2{
-        grid-column: 1 / 7;
-        grid-row: 2;
-    }
-     
-    .item3{
-        grid-column: 1 / 7;
-        grid-row: 8;
-    } 
-    .item4{
-        grid-column: 1 / 4;
-        grid-row: 3;
-    }
-    .item10{
-        grid-column: 1 / 4;
-        grid-row: 4;
-    }
-    .item11{
-        grid-column: 4 / 7;
-        grid-row: 4;
-    }
-
-    .item5{
-        grid-column: 4 / 7;
-        grid-row: 3;
-    }
-    .item7{
-        grid-column: 1 / 7;
-        grid-row: 9;
-    }
-    .item6{
-        grid-column: 1 / 7;
-        grid-row: 6;
-    }
-    .item9{
-        grid-column: 1 / 7;
-        grid-row: 7;
-    }
-    .item8{
-        grid-column: 1 / 7;
-        grid-row: 5;
-    }
+    
     .section3{
         display: flex;
         flex-direction: column;
@@ -588,7 +538,7 @@ h4{
       
     }
     .width{
-        font-size: 0.8em;
+  
         width: 80%;
     }
     .bare{
@@ -610,7 +560,7 @@ h4{
    }
    .timeline div{
          padding: 0px 15px;  
-        font-size: 16px; 
+        font-size: 18px; 
        position: relative;
        width: 100%;
           height: auto;  
@@ -618,6 +568,9 @@ h4{
         color: gray;
    
    }
+   /* .trois{
+    font-size: 4em;
+   } */
 
     .timeline div:after,   .timeline div:before{
         display: none;
@@ -662,4 +615,76 @@ h4{
         font-size: 1.2em;
     }
     /*  */
+}
+@media screen and (max-width: 610px){
+    body{
+        overflow-x: hidden;
+    }
+        .container{
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            width: 80%;        
+        }
+        .lien a{
+            background-color: orange;
+            position: absolute;
+            right: 15%;}
+            .d-grid{
+                display: grid;
+             
+               
+               
+        }
+        .d-grid .item1 img{
+            max-width: 100%;
+         height: 100%;
+        }
+        .item1{
+            grid-column: 1 / 7;
+            
+        }
+        .item2{
+            grid-column: 1 / 7;
+            grid-row: 2;
+        }
+         
+        .item3{
+            grid-column: 1 / 7;
+            grid-row: 8;
+        } 
+        .item4{
+            grid-column: 1 / 4;
+            grid-row: 3;
+        }
+        .item10{
+            grid-column: 1 / 4;
+            grid-row: 4;
+        }
+        .item11{
+            grid-column: 4 / 7;
+            grid-row: 4;
+        }
+    
+        .item5{
+            grid-column: 4 / 7;
+            grid-row: 3;
+        }
+        .item7{
+            grid-column: 1 / 7;
+            grid-row: 9;
+        }
+        .item6{
+            grid-column: 1 / 7;
+            grid-row: 6;
+        }
+        .item9{
+            grid-column: 1 / 7;
+            grid-row: 7;
+        }
+        .item8{
+            grid-column: 1 / 7;
+            grid-row: 5;
+        }
+      
 }
