@@ -553,7 +553,7 @@ h4{
     }
     .timeline{
         margin: 90 auto;
-        width: 80%;
+        width: 100%;
        border-left: none;
        padding: 0 20px 0 30px;
          height:auto; 
@@ -624,17 +624,17 @@ h4{
             display: flex;
             justify-content: start;
             align-items: start;
-            width: 80%;        
+            width: 90%;        
         }
         .lien a{
             background-color: orange;
             position: absolute;
             right: 15%;}
             .d-grid{
-                display: grid;
-             
-               
-               
+                display: grid;    
+        }
+        .timeline div{
+            font-size: 30px;
         }
         .d-grid .item1 img{
             max-width: 100%;
